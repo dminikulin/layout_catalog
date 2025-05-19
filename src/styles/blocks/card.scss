@@ -56,7 +56,7 @@
         background-position: 50% 50%;
       }
 
-      @for $i from 0 through $max--stars {
+      @for $i from 0 through $max-stars {
         &--#{$i} {
           .card__reviews-stars-star:nth-child(-n + #{$i}) {
             background-image: url(../images/star-active.svg);
