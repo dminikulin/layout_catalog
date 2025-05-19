@@ -1,26 +1,27 @@
 .main {
   padding: 50px 40px;
-
   display: grid;
-  grid-template-columns: repeat($column-count, $card-width);
+
+  @include responsive-columns(1);
+
   gap: 46px 48px;
   justify-content: center;
 }
 
 @media (min-width: 488px) {
   .main {
-    $column-count: 2;
+    @include responsive-columns(2);
   }
 }
 
 @media (min-width: 768px) {
   .main {
-    $column-count: 3;
+    @include responsive-columns(3);
   }
 }
 
 @media (min-width: 1024px) {
   .main {
-    $column-count: 4;
+    @include responsive-columns(4);
   }
 }
